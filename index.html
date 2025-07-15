@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Abdelrahman-tamer-friday-10-4-Assagiment7-01122615864/images/star.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="images/star.png" type="image/x-icon">
+    <title>Bookmarker</title>
+</head>
+
+<body>
+    <div class="container my-5 d-flex flex-column justify-content-center align-items-center p-3">
+        <div class="bookmark-header mb-4">
+            <h1 class="text-center align-self-start pacifico-regular">
+                <div class="layer"></div>
+                Bookmarker
+            </h1>
+        </div>
+        <div class="bookmark-body d-flex flex-column w-100 mt-4 p-3">
+            <div class="my-3">
+                <h2 class="text-center d-flex align-items-center justify-content-center text-wrap" style="gap: 8px;">
+                    <i class="fa-solid fa-bookmark" style="color: #4CAF70;"></i>
+                    <span class="righteous-regular"
+                        style="background: linear-gradient(90deg, #4CAF70, #BDB76B); background-clip: text; color: transparent;">
+                        Bookmark your favorite sites
+                    </span>
+                    <i class="fa-solid fa-bookmark" style="color: #BDB76B;"></i>
+                </h2>
+            </div>
+            <div class="mb-3 w-100 form-floating">
+                <input class="form-control" id="siteName" placeholder="Bookmark Name" type="text">
+                <label class="fw-bold" for="siteName">
+                    <i class="fa-solid fa-book-bookmark me-2"></i> Bookmark Name
+                </label>
+            </div>
+            <div class="mb-3 w-100 form-floating">
+                <input class="form-control" id="siteUrl" placeholder="Website URL" type="text">
+                <label class="fw-bold" for="siteUrl">
+                    <i class="fa-solid fa-link me-2"></i> Website URL
+                </label>
+            </div>
+            <div class="mb-3 w-100 text-center">
+                <button class="btn btn-danger mx-auto" id="submitBtn" type="button" onclick="addBookmark()">
+                    <i class="fa-solid fa-plus me-1"></i>Add Bookmark
+                </button>
+                <button class="d-none btn btn-warning mx-auto" id="updateBtn" type="button" onclick="updateBookmark()">
+                    <i class="fa-solid fa-pen me-1"></i>Update Bookmark
+                </button>
+            </div>
+
+            <div id="" class="w-100">
+                <div class="mb-2 w-25 mx-auto">
+                    <input class="form-control" id="searchInput" placeholder="Search For Bookmark" type="text"
+                        oninput="searchBookmarks(this.value)">
+                </div>
+
+                <table class="table my-4 w-100 table-responsive table-hover">
+                    <thead class="table-secondary">
+                        <td class="text-center fw-bold">Index</td>
+                        <td class="text-center fw-bold">Website Name</td>
+                        <td class="text-center fw-bold">Visit</td>
+                        <td class="text-center fw-bold">Delete</td>
+                        <td class="text-center fw-bold">Edit</td>
+                    </thead>
+                    <tbody id="tableData">
+                        <!-- Table rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
