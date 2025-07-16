@@ -119,6 +119,9 @@ table {
   .bookmark-body .btn#submitBtn{
     width: 50% !important;
   }
+  .bookmark-body .btn#updateBtn{
+    width: 50% !important;
+  }
   #searchInput{
     width: 100% !important;
   }
