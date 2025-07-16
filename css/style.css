@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap");
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  width: 100% !important;
+  background-color: #f7ecde !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.form-control {
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border: 1px solid orange !important;
+  box-shadow: 0 0 0 4px rgba(255, 166, 0, 0.25) !important;
+}
+
+.bookmark-header h1 {
+  font-size: 50px;
+  color: rgb(53, 46, 40);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.bookmark-header .layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 166, 0, 0.6);
+  height: 35%;
+  z-index: -1;
+  transition: all 0.25s ease-out;
+}
+
+.bookmark-header h1:hover .layer {
+  height: 65%;
+}
+
+.bookmark-body {
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.bookmark-body h2 {
+  font-size: 25px;
+}
+
+.bookmark-body .btn#submitBtn {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #d1512d;
+  border-color: #d1512d;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.bookmark-body .btn#submitBtn:hover {
+  background-color: #bb4120;
+  border-color: #a03315;
+}
+
+.bookmark-body .btn#updateBtn {
+  font-family: "PT Sans Caption", sans-serif;
+  width: 15%;
+  margin: 0 auto;
+
+}
+
+
+table {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-control#searchInput {
+  border-radius: 1rem;
+}
+
+#searchInput:placeholder {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+  .bookmark-body .btn#submitBtn{
+    width: 50% !important;
+  }
+  #searchInput{
+    width: 100% !important;
+  }
+}
